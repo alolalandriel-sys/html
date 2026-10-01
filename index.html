@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyIA - Asistente Educativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>🎓 StudyIA</h1>
+            <p>Tu asistente inteligente para estudiar</p>
+        </div>
+
+        <button id="modoOscuro" class="dark-btn">
+            🌙 Modo oscuro
+        </button>
+    </header>
+
+
+    <main class="container">
+
+        <!-- PANEL DE CONSULTA -->
+        <section class="card">
+
+            <h2>Hacé tu consulta</h2>
+
+            <label for="materia">Seleccioná una materia:</label>
+
+            <select id="materia">
+                <option value="">-- Seleccionar materia --</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Historia">Historia</option>
+                <option value="Geografía">Geografía</option>
+                <option value="Lengua">Lengua y Literatura</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Programación">Programación</option>
+                <option value="Física">Física</option>
+                <option value="Biología">Biología</option>
+            </select>
+
+
+            <label for="pregunta">Escribí tu pregunta:</label>
+
+            <textarea
+                id="pregunta"
+                placeholder="Ejemplo: ¿Qué fue la Revolución Francesa?"
+                rows="5">
+            </textarea>
+
+
+            <div id="error" class="error"></div>
+
+
+            <div class="buttons">
+
+                <button id="btnEnviar" class="primary-btn">
+                    🤖 Preguntar
+                </button>
+
+                <button id="btnEjercicio" class="secondary-btn">
+                    📝 Generar ejercicio
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA DE RESPUESTAS -->
+        <section class="card">
+
+            <div class="section-title">
+                <h2>💬 Conversación</h2>
+
+                <button id="btnLimpiar" class="clear-btn">
+                    🗑️ Limpiar
+                </button>
+            </div>
+
+
+            <div id="chat" class="chat">
+
+                <div class="welcome">
+                    <div class="robot">🤖</div>
+
+                    <h3>¡Hola! Soy StudyIA</h3>
+
+                    <p>
+                        Seleccioná una materia y haceme una pregunta
+                        para comenzar.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>StudyIA © 2026 - Proyecto educativo con Inteligencia Artificial</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
